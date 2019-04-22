@@ -6,4 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  clickValue: string = 'recipes';
+
+  onNavbarClicked(navbarClick: string) {
+    this.clickValue = navbarClick;
+  }
+
 }
